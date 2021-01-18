@@ -1,6 +1,6 @@
 # Coq Code Style Guide 
 
-(under developement, comments / pull requests are welcome)
+(under development, comments / pull requests are welcome)
 
 --- 
 
