@@ -9,7 +9,7 @@
 Use Emacs suggestions, but:
 * Do not indent the content of a `Section`.
 * Do not indent `by ...` construction on a new line.
-* Resonable indentation for multi-line expressions.
+* Reasonable indentation for multi-line expressions.
 
 ## Spaces
 * All binary operators (including typing operator `:` and `:=`) are surrounded by space.  
