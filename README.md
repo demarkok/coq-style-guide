@@ -134,7 +134,7 @@ Lemma collect_rel_ct (f : A -> B) (r : relation A) :
   f □ r⁺ ⊆ (f □ r)⁺.
 ```
 
-## Agruments naming
+## Arguments naming
 * Lowercase for variable-like arguments
 * Uppercase for property-like arguments
 * First, put all variable-like arguments in one line 
