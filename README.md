@@ -26,19 +26,28 @@ Use Emacs suggestions, but:
 * Separate `|` by spaces
 * No spaces after `[` and before `]` 
 
-:x:                `apply x; [auto|].`
-:x:                `apply x; [ auto | ].`
-:x:                `apply x; [auto| ].`
+:x:                `apply x; [done|].`
+:x:                `apply x; [ done | ].`
+:x:                `apply x; [done| ].`
 
-:heavy_check_mark: `apply x; [auto |].`
+:heavy_check_mark: `apply x; [done |].`
 
-:x:                `apply x; [auto| |].`
+:x:                `apply x; [done| |].`
 
-:heavy_check_mark: `apply x; [auto | |].`
+:heavy_check_mark: `apply x; [done | |].`
 
-:x:                `apply x; [auto| |basic_solver].`
+:x:                `apply x; [done| |basic_solver].`
 
-:heavy_check_mark: `apply x; [auto | | basic_solver].`
+:heavy_check_mark: `apply x; [done | | basic_solver].`
+
+
+* If the tactic within `[]` solves the subgoal, make sure it is terminating (use `by` or `done`). It will help locate the point where the proof is broken.
+
+:x:                `apply x; [auto | rewrite IH |].`
+
+:heavy_check_mark: `apply x; [done | by rewrite IH |].`
+
+
 
 ### 1,2,3:
 
